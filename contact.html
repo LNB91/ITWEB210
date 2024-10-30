@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Shelter Contact Form</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Cat Shelter Contact Form</h1>
+    </header>
+
+    <form action="" method="POST">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" placeholder="Your Name" required>
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="City" placeholder="Your City" required>
+        </div>
+        <div>
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="Zip Code" placeholder="Your Zip Code" required>
+        </div>
+        <div>
+            <label for="waiver">Disclaimer acknowledgement:</label>
+            <input type="checkbox" id="waiver" name="Confirmed">
+        </div>
+        <div>
+            <label for="contactReason">Reason for Contact:</label>
+            <select id="contactReason" name="Reason">
+                <option value="adoption">Adoption Inquiry</option>
+                <option value="volunteer">Volunteer Opportunities</option>
+                <option value="donation">Donation Questions</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="details">Details:</label>
+            <textarea id="details" name="Details" rows="5" cols="60" placeholder="Please type your request here." required></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Send">
+        </div>
+    </form>
+
+    <footer>
+        <p>&copy; 2023</p>
+    </footer>
+</body>
+</html>
